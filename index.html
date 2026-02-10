@@ -4,29 +4,34 @@
   <meta charset="UTF-8">
   <title>Dependency Fixer</title>
   <style>
-    body { 
-      font-family: Arial, sans-serif; 
-      text-align: center; 
-      background-color: #f9f9f9;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
       margin: 0;
       padding: 0;
+      text-align: center;
     }
     .container {
-      max-width: 800px;
+      max-width: 900px;
       margin: 50px auto;
       padding: 20px;
       background-color: white;
       border-radius: 12px;
       box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     }
+    h1 {
+      color: #333;
+    }
     img {
       max-width: 100%;
-      height: auto;
       border-radius: 10px;
+      margin: 20px 0;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
-    h1 { color: #333; }
-    p { color: #555; font-size: 16px; }
+    p {
+      color: #555;
+      font-size: 16px;
+    }
     a.button {
       display: inline-block;
       margin: 15px 0;
@@ -39,22 +44,30 @@
       transition: background 0.3s;
     }
     a.button:hover { background-color: #005bb5; }
-    h2 { margin-top: 40px; color: #333; }
-    form { margin-top: 15px; }
+    h2 {
+      margin-top: 40px;
+      color: #333;
+    }
+    form {
+      margin-top: 15px;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Dependency Fixer</h1>
+
+    <!-- Project screenshot or content -->
     <img src="cover.png" alt="Dependency Fixer Screenshot">
-    <p>Click the button below to open the live project:</p>
+
+    <!-- Open project link (optional if needed) -->
+    <p>Click below to open the live project interface:</p>
     <a href="https://dependency-fixer--farahmkabeel.replit.app" target="_blank" class="button">Open Project</a>
 
+    <!-- PayPal payment section -->
     <h2>Purchase Dependency Fixer</h2>
-    <p>Click below to pay securely via PayPal (Visa/Mastercard accepted)</p>
-
-    <!-- PayPal Button -->
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <p>Click the button below to pay securely via PayPal (Visa/Mastercard accepted)</p>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
       <input type="hidden" name="cmd" value="_xclick">
       <input type="hidden" name="business" value="YOUR_PAYPAL_EMAIL@example.com">
       <input type="hidden" name="item_name" value="Dependency Fixer">
@@ -64,7 +77,6 @@
              border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
       <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
     </form>
-
   </div>
 </body>
 </html>
