@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Dependency Fixer</title>
+  <title>Dependency Fixer - Order Now</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -20,38 +20,60 @@
       box-shadow: 0 6px 15px rgba(0,0,0,0.1);
     }
     h1 { color: #333; }
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      margin: 20px 0;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    h2 { color: #333; margin-top: 30px; }
+    select, button {
+      padding: 12px 20px;
+      margin: 10px 0;
+      font-size: 16px;
     }
-    p { color: #555; font-size: 16px; }
-    a.button {
-      display: inline-block;
-      margin: 15px 0;
-      padding: 12px 25px;
+    button {
       background-color: #0070f3;
       color: white;
-      text-decoration: none;
-      font-weight: bold;
+      border: none;
       border-radius: 5px;
+      cursor: pointer;
       transition: background 0.3s;
     }
-    a.button:hover { background-color: #005bb5; }
+    button:hover { background-color: #005bb5; }
+    p { font-size: 16px; color: #555; }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Dependency Fixer</h1>
 
-    <!-- Cover image -->
-    <img src="cover.png" alt="Dependency Fixer Screenshot">
+    <!-- Product options -->
+    <h2>Select Version</h2>
+    <label for="version">Version:</label>
+    <select id="version">
+      <option value="basic">Basic</option>
+      <option value="pro">Pro</option>
+    </select>
 
-    <!-- Open project button -->
-    <p>Click the button below to open the live project:</p>
-    <a href="https://dependency-fixer--farahmkabeel.replit.app" target="_blank" class="button">Open Project</a>
+    <p>Price: <span id="price">$10.00</span></p>
+
+    <!-- Order button -->
+    <button onclick="orderProduct()">Order Now</button>
   </div>
+
+  <script>
+    const versionSelect = document.getElementById('version');
+    const priceSpan = document.getElementById('price');
+
+    versionSelect.addEventListener('change', () => {
+      if(versionSelect.value === 'basic') {
+        priceSpan.textContent = '$10.00';
+      } else {
+        priceSpan.textContent = '$20.00';
+      }
+    });
+
+    function orderProduct() {
+      const selected = versionSelect.value;
+      const price = priceSpan.textContent;
+      alert(`You ordered the ${selected} version for ${price}`);
+      // Here you can later link to your own order handling system
+    }
+  </script>
 </body>
 </html>
