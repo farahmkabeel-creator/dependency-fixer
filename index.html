@@ -4,23 +4,54 @@
   <meta charset="UTF-8">
   <title>Dependency Fixer</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-    img { max-width: 100%; height: auto; }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+    h1 { color: #333; }
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin: 20px 0;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    p { color: #555; font-size: 16px; }
     a.button {
       display: inline-block;
-      margin-top: 20px;
-      padding: 10px 20px;
+      margin: 15px 0;
+      padding: 12px 25px;
       background-color: #0070f3;
       color: white;
       text-decoration: none;
+      font-weight: bold;
       border-radius: 5px;
+      transition: background 0.3s;
     }
+    a.button:hover { background-color: #005bb5; }
   </style>
 </head>
 <body>
-  <h1>Dependency Fixer</h1>
-  <img src="cover.png" alt="Dependency Fixer Screenshot">
-  <p>Click the button below to open the live project:</p>
-  <a href="https://dependency-fixer--farahmkabeel.replit.app" target="_blank" class="button">Open Project</a>
+  <div class="container">
+    <h1>Dependency Fixer</h1>
+
+    <!-- Cover image -->
+    <img src="cover.png" alt="Dependency Fixer Screenshot">
+
+    <!-- Open project button -->
+    <p>Click the button below to open the live project:</p>
+    <a href="https://dependency-fixer--farahmkabeel.replit.app" target="_blank" class="button">Open Project</a>
+  </div>
 </body>
 </html>
